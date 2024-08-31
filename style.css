@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Changed to a modern font */
+  box-sizing: border-box;
+  background-color: #f4f4f9; /* Soft background color */
+  color: #333; /* General text color */ 
+}
+
+.background1{
+  background: linear-gradient(135deg, #f7b42c, #fc575e); /* Updated gradient */
+  margin: 0%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff; /* White text for contrast */
+  text-align: center;
+}
+
+.heading{
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow for pop */
+
+}
+
+.lead{
+    font-family: cursive;
+    color: rgb(155, 127, 153);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.image{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image img{
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  max-width: 150px; /* Size control */
+  height: auto;
+  border: 3px solid #fff; /* Border for image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add depth with shadow */
+}
+
+.hello{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #374785; /* A cool contrasting color */
+  margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.space{
+  height: 150px;
+}
+
+.skills, .typing{
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  text-align: left;
+}
+
+.skills img, .typing img {
+  float: left;
+  max-width: 100px; /* Consistent image size */
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px; /* Slightly rounded corners */
+}
+
+.images{
+  max-width: 90%; /* Responsive width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: cursive;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.spaces{
+  height: 30px;
+}
+
+.skills{
+  margin: auto;
+  text-align: center;
+  font-family: cursive;
+  padding: 20px; /* Add padding for better spacing */
+}
+
+h1 {
+  font-size: 2rem;
+  color: #222;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.contact{
+  font-size: 1.8rem;
+    color: #374785;
+    margin: 40px 0 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .background1 {
+      height: auto; /* Allow content to determine height */
+      padding: 40px 20px;
+  }
+
+  .image {
+      margin-top: 20px;
+  }
+
+  .skills img, .typing img {
+      float: none; /* Stack images vertically */
+      margin: 0 auto 20px;
+  }
+
+  .images {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .skills, .typing {
+      text-align: left;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .background1 {
+      height: auto;
+      padding: 40px 20px;
+  }
+
+  .image {
+      margin-top: 20px;
+  }
+
+  .skills img, .typing img {
+      float: none;
+      margin: 0 auto 20px;
+  }
+
+  .skills, .typing {
+      text-align: left;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+      font-size: 2.2rem;
+  }
+
+  .lead {
+      font-size: 1rem;
+  }
+
+  .contact {
+      font-size: 1.5rem;
+  }
+}
